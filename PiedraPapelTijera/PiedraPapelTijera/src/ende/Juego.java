@@ -90,17 +90,17 @@ class Jugador{
      */
     public String opcion_al_azar()
     {
-        String opcion="";
-        Integer c = (int)(Math.random()*3);
-        switch(c){
+        String opcion = "";
+        Integer c = (int) (Math.random()*3);
+        switch (c) {
             case 0:
-            	opcion=("piedra");
+            	opcion = "piedra";
                 break;
             case 1:
-            	opcion=("papel");
+            	opcion = "papel";
                 break;
             case 2:
-            	opcion=("tijeras");
+            	opcion = "tijeras";
         }
         return opcion;
     }
