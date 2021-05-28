@@ -84,7 +84,26 @@ public class Juego
  *
  */
 class Jugador{
-   
+
+	private int exitos;      // número de partidas ganadas
+    private int winTotal;
+    
+    public void setExitos() 
+    {
+        exitos++;
+    }
+    public int getExitos() 
+    {
+        return exitos;
+    }
+    
+    public int getWinTotal() {
+		return winTotal;
+	}
+	public void setWinTotal(int winTotal) {
+		this.winTotal = winTotal;
+	}
+    
     /**
      * Escoge piedra, papel o tijera al azar
      */
@@ -104,22 +123,4 @@ class Jugador{
         }
         return opcion;
     }
-    public void setExitos() 
-    {
-        exitos++;
-    }
-    public int getExitos() 
-    {
-        return exitos;
-    }
-    
-    int getWinTotal() {
-		return winTotal;
-	}
-	void setWinTotal(int winTotal) {
-		this.winTotal = winTotal;
-	}
-
-	private int exitos;      // número de partidas ganadas
-    private int winTotal;
 }
